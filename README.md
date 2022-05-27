@@ -1,5 +1,10 @@
 # Bootstrap 5 WordPress Navbar Walker
 
+[![Build Status](https://badgen.net/github/checks/fiskhandlarn/bootstrap-5-wordpress-navbar-walker?label=build&icon=github)](https://github.com/fiskhandlarn/bootstrap-5-wordpress-navbar-walker/actions)
+[![Total Downloads](https://badgen.net/packagist/dt/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)](https://packagist.org/packages/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)
+[![Latest Version](https://badgen.net/packagist/v/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)](https://packagist.org/packages/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)
+[![License](https://badgen.net/packagist/license/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)](https://packagist.org/packages/fiskhandlarn/bootstrap-5-wordpress-navbar-walker)
+
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org), in the root directory of your project.
