@@ -15,28 +15,27 @@ $ composer require fiskhandlarn/bootstrap-5-wordpress-navbar-walker
 register_nav_menu('main-menu', 'Main menu');
 ```
 2. Add the following html code in your header.php file or wherever you want to place your menu:
-```html
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="main-menu">
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'main-menu',
-                'container' => false,
-                'menu_class' => '',
-                'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                'depth' => 2,
-                'walker' => new Fiskhandlarn\Bootstrap5WordpressNavbarWalker()
-            ));
-            ?>
-        </div>
+```php
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<?php
+     wp_nav_menu([
+         'theme_location' => 'navigation',
+         'container' => false,
+         'menu_class' => '',
+         'fallback_cb' => '__return_false',
+         'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+         'depth' => 2,
+         'walker' => new Fiskhandlarn\Bootstrap5WordpressNavbarWalker(),
+     ]);
+?>
     </div>
+  </div>
 </nav>
 ```
 
