@@ -1,0 +1,22 @@
+{
+  "name": "fiskhandlarn/bootstrap-5-wordpress-navbar-walker",
+  "description": "Bootstrap 5 WordPress navbar walker menu.",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Fiskhandlarn\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Oskar Joelson",
+      "email": "oskar@joelson.org"
+    }
+  ],
+  "extra":{
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "require": {}
+}
