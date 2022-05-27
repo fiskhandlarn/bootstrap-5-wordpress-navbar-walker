@@ -1,4 +1,4 @@
-# Bootstrap 5 WordPress navbar walker
+# Bootstrap 5 WordPress Navbar Walker
 
 ## Installation
 
