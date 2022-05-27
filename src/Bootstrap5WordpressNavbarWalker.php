@@ -1,6 +1,8 @@
 <?php
-// bootstrap 5 wp_nav_menu walker
-class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
+
+namespace Fiskhandlarn;
+
+class Bootstrap5WordpressNavbarWalker extends \Walker_Nav_menu
 {
     private $current_item;
     private $dropdown_menu_alignment_values = [
@@ -75,5 +77,3 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
         $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
     }
 }
-// register a new menu
-register_nav_menu('main-menu', 'Main menu');
