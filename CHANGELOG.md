@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.4.1
+
+- Add PHP CS
+- Run PHP CS on push via Github Actions
+
 ## 1.4.0
 
 - Add to Packagist
