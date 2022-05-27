@@ -1,6 +1,6 @@
 {
   "name": "fiskhandlarn/bootstrap-5-wordpress-navbar-walker",
-  "description": "Bootstrap 5 WordPress navbar walker menu.",
+  "description": "Bootstrap 5 WordPress navbar walker",
   "license": "MIT",
   "autoload": {
     "psr-4": {

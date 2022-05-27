@@ -1,6 +1,7 @@
-# Bootstrap 5 WordPress navbar walker menu
-[bootstrap-5-wordpress-navbar-walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker)
-## How to use:
+# Bootstrap 5 WordPress navbar walker
+
+## How to use
+
 1. Copy and paste the [bootstrap_5_wp_nav_menu_walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker/blob/main/functions.php) class into the functions.php file of your theme;
 2. Register a new menu by adding the follow code into the functions.php file of your theme:
 ```php
@@ -31,11 +32,14 @@ register_nav_menu('main-menu', 'Main menu');
     </div>
 </nav>
 ```
-### v1.3.0 Added support for dropdown menu (responsive) alignment: https://getbootstrap.com/docs/5.0/components/dropdowns/#menu-alignment
 
-**Here is how it works**:
+### Add support for [dropdown menu (responsive) alignment](https://getbootstrap.com/docs/5.0/components/dropdowns/#menu-alignment)
+
 - From _Appearance -> Menus_ page of WordPress, check the _CSS Classes_ checkbox under _Screen Options_;
 - Add a _Custom Link_ with "#" in the URL field (this would be the parent of your dropdown);
 - On the _CSS Classes_ field add any of the following alignment classes: 'dropdown-menu-start', 'dropdown-menu-end', 'dropdown-menu-sm-start', 'dropdown-menu-sm-end', 'dropdown-menu-md-start', 'dropdown-menu-md-end', 'dropdown-menu-lg-start', 'dropdown-menu-lg-end', 'dropdown-menu-xl-start', 'dropdown-menu-xl-end', 'dropdown-menu-xxl-start', 'dropdown-menu-xxl-end';
 - If any of the mentioned above class is detected, then they will automatically copied into the _ul.dropdown-menu_ element following the Bootstrap 5 structure;
 - Any other class that is not related to the dropdown menu alignment will stay where it is.
+
+## License
+[Expat License](./LICENSE)
