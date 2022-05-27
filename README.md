@@ -1,13 +1,20 @@
 # Bootstrap 5 WordPress navbar walker
 
-## How to use
+## Installation
 
-1. Copy and paste the [bootstrap_5_wp_nav_menu_walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker/blob/main/functions.php) class into the functions.php file of your theme;
-2. Register a new menu by adding the follow code into the functions.php file of your theme:
+Require this package, with [Composer](https://getcomposer.org), in the root directory of your project.
+
+```bash
+$ composer require fiskhandlarn/bootstrap-5-wordpress-navbar-walker
+```
+
+## Usage
+
+1. Register a new menu by adding the follow code into the functions.php file of your theme:
 ```php
 register_nav_menu('main-menu', 'Main menu');
 ```
-3. Add the following html code in your header.php file or wherever you want to place your menu:
+2. Add the following html code in your header.php file or wherever you want to place your menu:
 ```html
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
@@ -25,7 +32,7 @@ register_nav_menu('main-menu', 'Main menu');
                 'fallback_cb' => '__return_false',
                 'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
                 'depth' => 2,
-                'walker' => new bootstrap_5_wp_nav_menu_walker()
+                'walker' => new Fiskhandlarn\Bootstrap5WordpressNavbarWalker()
             ));
             ?>
         </div>
